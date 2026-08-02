@@ -12,7 +12,7 @@ use App\Models\Teacher;
 class HomeController extends Controller
 {
     public function index() {
-        $dataProgram = Program::all();
+        $dataProgram = Program::take(3)->get();
         $dataPost = Post::all();
         $dataActivity = Activitie::all();
         return view('home', compact('dataProgram', 'dataPost', 'dataActivity'));

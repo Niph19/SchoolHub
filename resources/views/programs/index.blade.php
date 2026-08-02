@@ -8,8 +8,8 @@
     <section class="text-gray-600 body-font">
         <div class="container px-5 pt-10 pb-5 mx-auto">
             <div class="flex flex-wrap -m-4">
-                @foreach($dataProgram as $data)
                 <div class="grid grid-cols-3">
+                @foreach($dataProgram as $data)
                     <a href="{{ route('programs.show', $data->id) }}">
                     <div class="p-4">
                         <div
