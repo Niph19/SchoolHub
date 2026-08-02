@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class program extends Model
 {
-    //
+    protected $fillable = [
+        'name',
+        'code',
+        'description',
+        'image',
+        'status',
+    ];
 }

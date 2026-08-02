@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<x-head :title="$title ?? 'SchooHub – Home'" />
+
+<body>
+    @include('components.navbar')
+
+    <!-- Hero -->
+    <div class="max-w-340 mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Grid -->
+        <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center pb-30 py-20">
+            <div>
+                <h1 class="block text-3xl font-bold text-foreground sm:text-4xl lg:text-6xl lg:leading-tight">Pusat
+                    Informasi Sekolah <span class="text-primary">SchoolHub</span></h1>
+                <p class="mt-3 text-lg text-foreground">Akses tak terbatas untuk informasi sekolah, program keahlian,
+                    guru, fasilitas, dan kegiatan. Kelola data sekolah Anda dengan mudah menggunakan fitur CRUD yang
+                    efisien.</p>
+            </div>
+            <!-- End Col -->
+
+            <div class="relative ms-4">
+                <img class="w-full rounded-md" src="{{ asset('images/Desian-Web.png') }}" alt="Hero Image">
+                <div
+                    class="absolute inset-0 -z-1 bg-linear-to-tr from-surface-1 via-transparent to-travia-transparent size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6">
+                </div>
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Grid -->
+    </div>
+    <!-- End Hero -->
+
+    <h1 class="block text-4xl text-center justify-center font-bold text-foreground">Program Keahlian</h1>
+    {{-- Jurusan --}}
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 pt-10 pb-5 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                {{-- @foreach --}}
+                <div class="p-4 lg:w-1/3">
+                    <div
+                        class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Program Keahlian
+                        </h2>
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Nama!</h1>
+                        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                            microdosing tousled waistcoat.</p>
+                    </div>
+                </div>
+                {{-- @endforeach --}}
+            </div>
+        </div>
+    </section>
+    <div class="flex justify-center mb-20">
+        <button class="btn btn-soft btn-primary">Lihat Selengkapnya</button>
+    </div>
+
+    <h1 class="block text-4xl text-center justify-center font-bold text-foreground">Artikel Terbaru</h1>
+    {{-- Blog --}}
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 pt-10 pb-5 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                    <div class="h-full border-2 border-gray-700 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                            src="https://dummyimage.com/720x400" alt="blog">
+                        <div class="p-6">
+                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Artikel</h2>
+                            <h1 class="title-font text-lg font-medium text-gray-300 mb-3">The Catalyzer</h1>
+                            <p class="leading-relaxed text-gray-500 mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                jianbing microdosing tousled waistcoat.</p>
+                            <div class="flex items-center flex-wrap ">
+                                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Buka Artikel
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+        <div class="flex justify-center mb-20">
+        <button class="btn btn-soft btn-primary">Lihat Selengkapnya</button>
+    </div>
+
+    <h1 class="block text-4xl text-center justify-center font-bold text-foreground">Kegiatan Terbaru</h1>
+    {{-- Blog --}}
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 pt-10 pb-5 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                    <div class="h-full border-2 border-gray-700 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                            src="https://dummyimage.com/720x400" alt="blog">
+                        <div class="p-6">
+                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Kegiatan</h2>
+                            <h1 class="title-font text-lg font-medium text-gray-300 mb-3">The Catalyzer</h1>
+                            <p class="leading-relaxed text-gray-500 mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                jianbing microdosing tousled waistcoat.</p>
+                            <div class="flex items-center flex-wrap ">
+                                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Buka Kegiatan
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+        <div class="flex justify-center mb-20">
+        <button class="btn btn-soft btn-primary">Lihat Selengkapnya</button>
+    </div>
+
+    @include('components.footer')
+    <script src="./node_modules/preline/dist/preline.js"></script>
+</body>
+
+</html>
