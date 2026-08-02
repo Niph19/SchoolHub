@@ -14,7 +14,7 @@
                 <li><a href="{{ route('teachers.index') }}">Teachers</a></li>
                 <li><a href="{{ route('activities.index') }}">Activitites</a></li>
                 <li><a href="{{ route('facilities.index') }}">Facilities</a></li>
-                <li><a>Blog</a></li>
+            <li><a href="{{ route('posts.index') }}">Blog</a></li>
             </ul>
         </div>
         <a class="btn btn-ghost text-xl ps-27">SchoolHub</a>
@@ -27,7 +27,7 @@
             <li><a href="{{ route('teachers.index') }}">Teachers</a></li>
             <li><a href="{{ route('activities.index') }}">Activitites</a></li>
             <li><a href="{{ route('facilities.index') }}">Facilities</a></li>
-            <li><a>Blog</a></li>
+            <li><a href="{{ route('posts.index') }}">Blog</a></li>
         </ul>
     </div>
     <div class="navbar-end">
