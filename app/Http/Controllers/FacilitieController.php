@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Facilitie;
+
 
 class FacilitieController extends Controller
 {
-    //
+    public function index() {
+        $dataFacilitie = Facilitie::all();
+        return view('facilities.index', compact('dataFacilitie'));
+    }
 }

@@ -8,12 +8,12 @@
                 </svg>
             </div>
             <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Programs</a></li>
-                <li><a>Teachers</a></li>
-                <li><a>Activities</a></li>
-                <li><a>Facilities</a></li>
+                <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('about.index') }}">About</a></li>
+                <li><a href="{{ route('programs.index') }}">Programs</a></li>
+                <li><a href="{{ route('teachers.index') }}">Teachers</a></li>
+                <li><a href="{{ route('activities.index') }}">Activitites</a></li>
+                <li><a href="{{ route('facilities.index') }}">Facilities</a></li>
                 <li><a>Blog</a></li>
             </ul>
         </div>
@@ -26,7 +26,7 @@
             <li><a href="{{ route('programs.index') }}">Programs</a></li>
             <li><a href="{{ route('teachers.index') }}">Teachers</a></li>
             <li><a href="{{ route('activities.index') }}">Activitites</a></li>
-            <li><a>Facilities</a></li>
+            <li><a href="{{ route('facilities.index') }}">Facilities</a></li>
             <li><a>Blog</a></li>
         </ul>
     </div>

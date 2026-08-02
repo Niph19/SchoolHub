@@ -64,41 +64,7 @@
         </a>
     </div>
 
-    <h1 class="block text-4xl text-center justify-center font-bold text-foreground">Artikel Terbaru</h1>
-    {{-- Blog --}}
-    <section class="text-gray-600 body-font">
-        <div class="container px-5 pt-10 pb-5 mx-auto">
-            <div class="flex flex-wrap -m-4">
-                <div class="grid grid-cols-3 gap-3">
-                    @foreach($dataActivity as $data)
-                    <div class="p-4">
-                        <div class="h-full border-2 border-gray-700 border-opacity-60 rounded-lg overflow-hidden">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
-                                src="{{ asset('images/activities/' . $data->image) }}" alt="blog">
-                            <div class="p-6">
-                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">{{ $data->location }}
-                                </h2>
-                                <h1 class="title-font text-lg font-medium text-gray-200 mb-1.5">{{ $data->title }}</h1>
-                                <p class="leading-relaxed text-gray-400 mb-3">{{ $data->description }}</p>
-                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{{ $data->activity_date }}
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-
-            </div>
-        </div>
-    </section>
-        <div class="flex justify-center mb-20">
-        <a href="{{ route('activities.index') }}" >
-        <button class="btn btn-soft btn-primary">Lihat Selengkapnya</button>
-        </a>
-    </div>
-
-    <h1 class="block text-4xl text-center justify-center font-bold text-foreground">Kegiatan Terbaru</h1>
-    {{-- Blog --}}
+        <h1 class="block text-4xl text-center justify-center font-bold text-foreground">Artikel Terbaru</h1>
     <section class="text-gray-600 body-font">
         <div class="container px-5 pt-10 pb-5 mx-auto">
             <div class="flex flex-wrap -m-4">
@@ -130,6 +96,42 @@
         <div class="flex justify-center mb-20">
         <button class="btn btn-soft btn-primary">Lihat Selengkapnya</button>
     </div>
+
+    <h1 class="block text-4xl text-center justify-center font-bold text-foreground">Kegiatan Terbaru</h1>
+    {{-- Blog --}}
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 pt-10 pb-5 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                <div class="grid grid-cols-3 gap-3">
+                    @foreach($dataActivity as $data)
+                    <div class="p-4">
+                        <div class="h-full border-2 border-gray-700 border-opacity-60 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="{{ asset('images/activities/' . $data->image) }}" alt="blog">
+                            <div class="p-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">{{ $data->location }}
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-gray-200 mb-1.5">{{ $data->title }}</h1>
+                                <p class="leading-relaxed text-gray-400 mb-3">{{ $data->description }}</p>
+                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{{ $data->activity_date }}
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+
+            </div>
+        </div>
+    </section>
+        <div class="flex justify-center mb-20">
+        <a href="{{ route('activities.index') }}" >
+        <button class="btn btn-soft btn-primary">Lihat Selengkapnya</button>
+        </a>
+    </div>
+    {{-- Blog --}}
+    
+
 
     @include('components.footer')
     <script src="./node_modules/preline/dist/preline.js"></script>
