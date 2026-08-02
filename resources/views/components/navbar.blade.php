@@ -22,7 +22,7 @@
         <ul class="menu menu-horizontal px-1">
             <li><a href="{{ route('home') }}">Home</a></li>
             <li><a href="{{ route('about.index') }}">About</a></li>
-            <li><a>Programs</a></li>
+            <li><a href="{{ route('programs.index') }}">Programs</a></li>
             <li><a>Teachers</a></li>
             <li><a>Facilities</a></li>
             <li><a>Blog</a></li>

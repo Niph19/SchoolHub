@@ -52,7 +52,9 @@
         </div>
     </section>
     <div class="flex justify-center mb-20">
+        <a href="{{ route('programs.index') }}" >
         <button class="btn btn-soft btn-primary">Lihat Selengkapnya</button>
+        </a>
     </div>
 
     <h1 class="block text-4xl text-center justify-center font-bold text-foreground">Artikel Terbaru</h1>
