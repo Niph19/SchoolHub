@@ -13,8 +13,8 @@ class HomeController extends Controller
 {
     public function index() {
         $dataProgram = Program::take(3)->get();
-        $dataPost = Post::all();
-        $dataActivity = Activitie::all();
+        $dataPost = Post::take(3)->get();
+        $dataActivity = Activitie::take(3)->get();
         return view('home', compact('dataProgram', 'dataPost', 'dataActivity'));
     }
 

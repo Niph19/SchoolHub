@@ -5,7 +5,7 @@
 <body>
     @include('components.navbar')
     @yield('content')
-
+<h1 class="block text-5xl text-center justify-center font-bold text-foreground mt-5 mb-15">Guru Sekolah</h1>
     <div class="grid grid-cols-3 px-65 gap-5 my-10">
         @foreach($dataTeacher as $data)
             <div
