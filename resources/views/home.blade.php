@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<x-head :title="$title ?? 'SchooHub – Home'" />
-
-<body>
-    @include('components.navbar')
-
+@extends('layouts.app')
+@section('contents')
     <!-- Hero -->
     <div class="max-w-340 mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Grid -->
@@ -130,11 +124,4 @@
         </a>
     </div>
     {{-- Blog --}}
-    
-
-
-    @include('components.footer')
-    <script src="./node_modules/preline/dist/preline.js"></script>
-</body>
-
-</html>
+@endsection

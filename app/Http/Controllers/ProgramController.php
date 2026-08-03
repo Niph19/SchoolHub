@@ -19,6 +19,11 @@ class ProgramController extends Controller
         return view('programs.show', compact('dataProgram'));
     }
 
+    public function adminIndex() {
+        $dataProgram = Program::all();
+        return view('admin.program.index', compact('dataProgram'));
+    }
+
 
     public function store(Request $request)
     {

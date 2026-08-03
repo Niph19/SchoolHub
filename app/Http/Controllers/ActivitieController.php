@@ -10,4 +10,9 @@ class ActivitieController extends Controller
         $dataActivitie = Activitie::all();
         return view('activities.index', compact('dataActivitie'));
     }
+
+    public function adminIndex() {
+        $dataActivite = Activitie::all();
+        return view('admin.activities.index', compact('dataActivite'));
+    }
 }

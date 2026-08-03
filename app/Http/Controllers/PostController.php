@@ -16,4 +16,9 @@ class PostController extends Controller
         $dataPost = Post::findOrFail($id);
         return view('posts.show', compact('dataPost'));
     }
+
+    public function adminIndex() {
+        $dataPost = Post::all();
+        return view('admin.posts.index', compact('dataPost'));
+    }
 }

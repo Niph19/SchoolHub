@@ -24,6 +24,9 @@ class HomeController extends Controller
         $dataActivity = Activitie::all();
         $dataFacilitie = Facilitie::all();
         $dataTeacher = Teacher::all();
+
+        
+
         return view('admin.dashboard', compact('dataProgram', 'dataPost', 'dataActivity', 'dataFacilitie', 'dataTeacher'));
     }
 }

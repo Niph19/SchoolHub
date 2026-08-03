@@ -11,4 +11,9 @@ class FacilitieController extends Controller
         $dataFacilitie = Facilitie::all();
         return view('facilities.index', compact('dataFacilitie'));
     }
+
+    public function adminIndex() {
+        $dataFacilitie = Facilitie::all();
+        return view('admin.facilities.index', compact('dataFacilitie'));
+    }
 }

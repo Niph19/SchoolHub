@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<x-head :title="$title ?? 'SchoolHub – Teacher'" />
-
-<body>
-    @include('components.navbar')
-    @yield('content')
+@extends('layouts.app')
+@section('contents')
 <h1 class="block text-5xl text-center justify-center font-bold text-foreground mt-5 mb-15">Guru Sekolah</h1>
     <div class="grid grid-cols-3 px-65 gap-5 my-10">
         @foreach($dataTeacher as $data)
@@ -28,9 +23,6 @@
         @endforeach
     </div>
 
-    @include('components.footer')
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
     <script src="./node_modules/preline/dist/preline.js"></script>
-</body>
-
-</html>
+@endsection

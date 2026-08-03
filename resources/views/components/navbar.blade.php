@@ -17,17 +17,17 @@
             <li><a href="{{ route('posts.index') }}">Blog</a></li>
             </ul>
         </div>
-        <a class="btn btn-ghost text-xl ps-27">SchoolHub</a>
+        <a class="btn btn-ghost text-primary text-xl ps-27">SchoolHub</a>
     </div>
     <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-            <li><a href="{{ route('home') }}">Home</a></li>
-            <li><a href="{{ route('about.index') }}">About</a></li>
-            <li><a href="{{ route('programs.index') }}">Programs</a></li>
-            <li><a href="{{ route('teachers.index') }}">Teachers</a></li>
-            <li><a href="{{ route('activities.index') }}">Activitites</a></li>
-            <li><a href="{{ route('facilities.index') }}">Facilities</a></li>
-            <li><a href="{{ route('posts.index') }}">Blog</a></li>
+            <li><a href="{{ route('home') }}" class="hover:text-primary">Home</a></li>
+            <li><a href="{{ route('about.index') }}" class="hover:text-primary">About</a></li>
+            <li><a href="{{ route('programs.index') }}" class="hover:text-primary">Programs</a></li>
+            <li><a href="{{ route('teachers.index') }}" class="hover:text-primary">Teachers</a></li>
+            <li><a href="{{ route('activities.index') }}" class="hover:text-primary">Activitites</a></li>
+            <li><a href="{{ route('facilities.index') }}" class="hover:text-primary">Facilities</a></li>
+            <li><a href="{{ route('posts.index') }}" class="hover:text-primary">Blog</a></li>
         </ul>
     </div>
     <div class="navbar-end">

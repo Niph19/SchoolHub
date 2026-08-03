@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<x-head :title="$title ?? 'SchooHub – Programs'" />
-
-<body>
-    @include('components.navbar')
+@extends('layouts.app')
+@section('contents')
     <h1 class="block text-5xl text-center justify-center font-bold text-foreground mt-5 mb-15">Program Keahlian</h1>
     <section class="text-gray-600 body-font">
         <div class="container px-5 pt-10 pb-5 mx-auto">
@@ -31,6 +27,4 @@
     </section>
     @include('components.footer')
     <script src="./node_modules/preline/dist/preline.js"></script>
-</body>
-
-</html>
+@endsection

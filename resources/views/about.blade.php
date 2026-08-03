@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<x-head :title="$title ?? 'SchoolHub – About'" />
-
-<body>
-    @include('components.navbar')
+@extends('layouts.app')
+@section('contents')
     <section class="text-gray-300 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
@@ -33,8 +29,4 @@ dan bimbingan karakter. Di sini, kami berbagi pondasi dan dedikasi kami.</p>
             </div>
         </div>
     </section>
-    @include('components.footer')
-    <script src="./node_modules/preline/dist/preline.js"></script>
-</body>
-
-</html>
+@endsection
