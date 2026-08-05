@@ -25,8 +25,11 @@ class HomeController extends Controller
         $dataFacilitie = Facilitie::all();
         $dataTeacher = Teacher::all();
 
-        
+        $totalProgram = Program::count();
+        $totalTeacher = Teacher::count();
+        $totalActivity = Activitie::count();
+        $totalPost = Post::count();
 
-        return view('admin.dashboard', compact('dataProgram', 'dataPost', 'dataActivity', 'dataFacilitie', 'dataTeacher'));
+        return view('admin.dashboard', compact('dataProgram', 'dataPost', 'dataActivity', 'dataFacilitie', 'dataTeacher', 'totalProgram', 'totalTeacher', 'totalActivity', 'totalPost'));
     }
 }

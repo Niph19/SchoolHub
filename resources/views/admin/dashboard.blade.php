@@ -10,7 +10,7 @@
                             </div>
                             <div class="content">
                                 <h5 class="mb-10">Programs</h5>
-                                <h2 class="text-bold mb-10">34567</h2>
+                                <h2 class="text-bold mb-10">{{$totalProgram}}</h2>
                             </div>
                         </div>
                         <!-- End Icon Cart -->
@@ -23,7 +23,7 @@
                             </div>
                             <div class="content">
                                 <h5 class="mb-10">Teachers</h5>
-                                <h2 class="text-bold mb-10">$74,567</h2>
+                                <h2 class="text-bold mb-10">{{ $totalTeacher }}</h2>
                             </div>
                         </div>
                         <!-- End Icon Cart -->
@@ -36,7 +36,7 @@
                             </div>
                             <div class="content">
                                 <h5 class="mb-10">Activities</h5>
-                                <h2 class="text-bold mb-10">$24,567</h2>
+                                <h2 class="text-bold mb-10">{{ $totalActivity }}</h2>
                             </div>
                         </div>
                         <!-- End Icon Cart -->
@@ -49,7 +49,7 @@
                             </div>
                             <div class="content">
                                 <h5 class="mb-10">Posts</h5>
-                                <h2 class="text-bold mb-10">34567</h2>
+                                <h2 class="text-bold mb-10">{{ $totalPost }}</h2>
                             </div>
                         </div>
                         <!-- End Icon Cart -->
